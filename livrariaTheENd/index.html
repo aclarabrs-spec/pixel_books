@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Books</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TELA INICIAL -->
+
+    <div id="start-screen">
+
+        <h1>PIXEL BOOKS</h1>
+
+        <p>
+            uma pequena livraria perdida entre mundos...
+        </p>
+
+        <button id="start-button">
+            ▶ ENTRAR NA LIVRARIA
+        </button>
+
+    </div>
+
+
+    <!-- JOGO -->
+
+    <main id="game" class="hidden">
+
+        <!-- barra superior -->
+
+        <header class="game-header">
+
+            <div>
+                📖 PIXEL BOOKS
+            </div>
+
+            <div>
+                ★ 0 livros encontrados
+            </div>
+
+        </header>
+
+
+        <!-- cenário -->
+
+        <section id="room">
+
+
+            <!-- ESTANTE ESQUERDA -->
+
+            <div class="bookshelf shelf1">
+
+                <div class="books">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <div class="books">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ESTANTE CENTRAL -->
+
+            <div class="bookshelf shelf2">
+
+                <div class="books">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="books">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+
+            <!-- ESTANTE DIREITA -->
+
+            <div class="bookshelf shelf3">
+
+                <div class="books">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="books">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+
+            <!-- tapete -->
+
+            <div class="rug"></div>
+
+
+            <!-- mesa -->
+
+            <div class="table">
+
+                <div class="open-book">
+                    📖
+                </div>
+
+            </div>
+
+
+<!-- MASCOTE / PERSONAGEM PRINCIPAL -->
+
+
+<div id="player">
+    <img
+        id="cat"
+        src="./img/gato.png"
+        alt=""
+        draggable="false"
+    >
+</div>
+
+
+
+            <!-- mensagem de interação -->
+
+            <div id="interaction">
+                E — VER LIVROS
+            </div>
+
+        </section>
+
+
+        <!-- CONTROLES -->
+
+        <footer>
+
+            WASD / SETAS — andar
+            &nbsp;&nbsp;
+            E — interagir
+
+        </footer>
+
+    </main>
+
+<!-- =====================================
+     JANELA / CATÁLOGO DE LIVROS
+===================================== -->
+
+<div id="book-menu" class="hidden">
+
+    <div class="window">
+
+        <!-- botão para fechar -->
+        <button id="close-menu">
+            X
+        </button>
+
+
+        <!-- o JavaScript vai mudar esse título -->
+        <h2 id="shelf-title">
+            ✦ LIVROS ✦
+        </h2>
+
+
+        <p class="subtitle">
+            escolha um livro
+        </p>
+
+
+        <!--
+            NÃO COLOQUE OS LIVROS AQUI.
+
+            O JavaScript vai colocar
+            Coraline, Fantasma da Ópera etc.
+            automaticamente.
+        -->
+
+        <div class="book-grid">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
